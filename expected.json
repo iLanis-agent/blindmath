@@ -1,0 +1,679 @@
+[
+ {
+  "tool": "inside",
+  "args": [
+   120.4,
+   120.0,
+   120.7,
+   140,
+   140.3,
+   139.8,
+   1
+  ],
+  "expect": {
+   "orderWidth": 119.0,
+   "orderDrop": 140.3,
+   "bow": 0.7,
+   "square": "square opening"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   60,
+   60,
+   60,
+   100,
+   100,
+   100,
+   0.5
+  ],
+  "expect": {
+   "orderWidth": 59.5,
+   "orderDrop": 100.0,
+   "bow": 0.0,
+   "square": "square opening"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   200,
+   199.2,
+   201.5,
+   180,
+   179.5,
+   181,
+   1
+  ],
+  "expect": {
+   "orderWidth": 198.2,
+   "orderDrop": 181.0,
+   "bow": 2.3,
+   "square": "out of square by 2.3 cm - expect small light gaps at the wide end"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   90.5,
+   91.5,
+   90.0,
+   150,
+   150,
+   150,
+   1.5
+  ],
+  "expect": {
+   "orderWidth": 88.5,
+   "orderDrop": 150.0,
+   "bow": 1.5,
+   "square": "out of square by 1.5 cm - expect small light gaps at the wide end"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   100,
+   100.9,
+   100.5,
+   120,
+   121,
+   120.5,
+   1
+  ],
+  "expect": {
+   "orderWidth": 99.0,
+   "orderDrop": 121.0,
+   "bow": 0.9,
+   "square": "square opening"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   45,
+   45.3,
+   44.8,
+   60,
+   61,
+   60.5,
+   0.5
+  ],
+  "expect": {
+   "orderWidth": 44.3,
+   "orderDrop": 61.0,
+   "bow": 0.5,
+   "square": "square opening"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   150,
+   150,
+   150,
+   200,
+   200,
+   200,
+   2
+  ],
+  "expect": {
+   "orderWidth": 148.0,
+   "orderDrop": 200.0,
+   "bow": 0.0,
+   "square": "square opening"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   80.25,
+   80.25,
+   80.25,
+   90.05,
+   90.05,
+   90.05,
+   0.75
+  ],
+  "expect": {
+   "orderWidth": 79.5,
+   "orderDrop": 90.1,
+   "bow": 0.0,
+   "square": "square opening"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   300,
+   299,
+   301,
+   250,
+   251,
+   249,
+   1.2
+  ],
+  "expect": {
+   "orderWidth": 297.8,
+   "orderDrop": 251.0,
+   "bow": 2.0,
+   "square": "out of square by 2 cm - expect small light gaps at the wide end"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   100,
+   102,
+   101,
+   100,
+   100,
+   100,
+   0
+  ],
+  "expect": {
+   "orderWidth": 100.0,
+   "orderDrop": 100.0,
+   "bow": 2.0,
+   "square": "out of square by 2 cm - expect small light gaps at the wide end"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   -1,
+   120,
+   120,
+   140,
+   140,
+   140,
+   1
+  ],
+  "expect": {
+   "error": "widths must be positive"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   120,
+   0,
+   120,
+   140,
+   140,
+   140,
+   1
+  ],
+  "expect": {
+   "error": "widths must be positive"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   120,
+   120,
+   120,
+   -5,
+   140,
+   140,
+   1
+  ],
+  "expect": {
+   "error": "drops must be positive"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   120,
+   120,
+   120,
+   140,
+   0,
+   140,
+   1
+  ],
+  "expect": {
+   "error": "drops must be positive"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   120,
+   120,
+   120,
+   140,
+   140,
+   140,
+   -0.5
+  ],
+  "expect": {
+   "error": "deduction must not be negative"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   1.0,
+   1.0,
+   1.0,
+   100,
+   100,
+   100,
+   1.0
+  ],
+  "expect": {
+   "error": "deduction leaves no width"
+  }
+ },
+ {
+  "tool": "inside",
+  "args": [
+   0.9,
+   1.1,
+   1.0,
+   100,
+   100,
+   100,
+   1.5
+  ],
+  "expect": {
+   "error": "deduction leaves no width"
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   140,
+   5,
+   0.5
+  ],
+  "expect": {
+   "count": 32,
+   "pitch": 4.5,
+   "coverage": 144.5
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   100,
+   5,
+   0.5
+  ],
+  "expect": {
+   "count": 23,
+   "pitch": 4.5,
+   "coverage": 104.0
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   90,
+   2.5,
+   0.3
+  ],
+  "expect": {
+   "count": 41,
+   "pitch": 2.2,
+   "coverage": 90.5
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   200,
+   9,
+   1
+  ],
+  "expect": {
+   "count": 25,
+   "pitch": 8.0,
+   "coverage": 201.0
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   4.5,
+   5,
+   0.5
+  ],
+  "expect": {
+   "count": 1,
+   "pitch": 4.5,
+   "coverage": 5.0
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   4.6,
+   5,
+   0.5
+  ],
+  "expect": {
+   "count": 2,
+   "pitch": 4.5,
+   "coverage": 9.5
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   150,
+   6.3,
+   0
+  ],
+  "expect": {
+   "count": 24,
+   "pitch": 6.3,
+   "coverage": 151.2
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   120,
+   5,
+   1.5
+  ],
+  "expect": {
+   "count": 35,
+   "pitch": 3.5,
+   "coverage": 124.0
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   88.8,
+   4.4,
+   0.4
+  ],
+  "expect": {
+   "count": 23,
+   "pitch": 4.0,
+   "coverage": 92.4
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   250,
+   10,
+   2
+  ],
+  "expect": {
+   "count": 32,
+   "pitch": 8.0,
+   "coverage": 258.0
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   0,
+   5,
+   0.5
+  ],
+  "expect": {
+   "error": "drop must be positive"
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   -10,
+   5,
+   0.5
+  ],
+  "expect": {
+   "error": "drop must be positive"
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   100,
+   0,
+   0.5
+  ],
+  "expect": {
+   "error": "slat width must be positive"
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   100,
+   5,
+   -0.1
+  ],
+  "expect": {
+   "error": "overlap must not be negative"
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   100,
+   5,
+   5
+  ],
+  "expect": {
+   "error": "overlap must be less than slat width"
+  }
+ },
+ {
+  "tool": "slats",
+  "args": [
+   100,
+   5,
+   6
+  ],
+  "expect": {
+   "error": "overlap must be less than slat width"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   300,
+   180
+  ],
+  "expect": {
+   "count": 2,
+   "each": 150.0,
+   "verdict": "2 blinds, even split"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   150,
+   180
+  ],
+  "expect": {
+   "count": 1,
+   "each": 150.0,
+   "verdict": "one blind does it"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   180,
+   180
+  ],
+  "expect": {
+   "count": 1,
+   "each": 180.0,
+   "verdict": "one blind does it"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   181,
+   180
+  ],
+  "expect": {
+   "count": 2,
+   "each": 90.5,
+   "verdict": "2 blinds, even split"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   600,
+   180
+  ],
+  "expect": {
+   "count": 4,
+   "each": 150.0,
+   "verdict": "4 blinds, even split"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   500,
+   120
+  ],
+  "expect": {
+   "count": 5,
+   "each": 100.0,
+   "verdict": "5 blinds, even split"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   240,
+   100
+  ],
+  "expect": {
+   "count": 3,
+   "each": 80.0,
+   "verdict": "3 blinds, even split"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   95,
+   30
+  ],
+  "expect": {
+   "count": 4,
+   "each": 23.8,
+   "verdict": "4 narrow blinds - a valance helps the joins"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   123.4,
+   50.5
+  ],
+  "expect": {
+   "count": 3,
+   "each": 41.1,
+   "verdict": "3 blinds, even split"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   1000,
+   250
+  ],
+  "expect": {
+   "count": 4,
+   "each": 250.0,
+   "verdict": "4 blinds, even split"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   39,
+   50
+  ],
+  "expect": {
+   "count": 1,
+   "each": 39.0,
+   "verdict": "one blind does it"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   79.9,
+   40
+  ],
+  "expect": {
+   "count": 2,
+   "each": 40.0,
+   "verdict": "2 blinds, even split"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   79.9,
+   45
+  ],
+  "expect": {
+   "count": 2,
+   "each": 40.0,
+   "verdict": "2 blinds, even split"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   0,
+   180
+  ],
+  "expect": {
+   "error": "span must be positive"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   -100,
+   180
+  ],
+  "expect": {
+   "error": "span must be positive"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   300,
+   0
+  ],
+  "expect": {
+   "error": "max width must be positive"
+  }
+ },
+ {
+  "tool": "split",
+  "args": [
+   300,
+   -10
+  ],
+  "expect": {
+   "error": "max width must be positive"
+  }
+ }
+]
